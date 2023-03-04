@@ -9,8 +9,14 @@ class StackDemo extends StatelessWidget {
       child: Stack(
         children: [
           Container(color: Colors.amber,height: 500,width: 500,),
-          Container(color: Color.fromARGB(255, 255, 172, 64),height: 300,width: 300,),
-          Container(color: Color.fromARGB(255, 224, 85, 20),height: 100,width: 100,)
+          Positioned(
+            left: 20,
+            bottom: 50,
+            child: Container(color: Color.fromARGB(255, 255, 172, 64),height: 300,width: 300,)),
+          Positioned(
+            left: 70,
+            top: 30,
+            child: Container(color: Color.fromARGB(255, 224, 85, 20),height: 100,width: 100,))
         ],
       ),
     ),
