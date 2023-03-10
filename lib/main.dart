@@ -3,6 +3,8 @@ import 'dart:async';
 import 'package:assignment_ui/GridView_UI.dart';
 import 'package:assignment_ui/stackdemo.dart';
 import 'package:assignment_ui/stackwithgrid.dart';
+import 'package:assignment_ui/staggered_ui.dart';
+import 'package:assignment_ui/staggeredgrid.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:device_preview/device_preview.dart';
@@ -30,7 +32,7 @@ class SpashScreen extends StatefulWidget {
 class _SpashScreenState extends State<SpashScreen> {
   void initState(){
     Timer(Duration(seconds: 10), () { 
-      Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context)=>Stack_UI()));
+      Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context)=>Staggered_UI()));
     });
 
   }
